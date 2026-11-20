@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Loan eligibility and repayment risk decision support.">
+  <title>Loan Eligibility &amp; Repayment Risk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell" id="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#home" aria-label="Loan insights home">
+        <span class="brand-symbol">L</span>
+        <span class="brand-name">Loan Insights</span>
+      </a>
+
+      <div class="sidebar-label">WORKSPACE</div>
+      <nav class="sidebar-nav" id="sidebar-nav" aria-label="Main navigation">
+        <a class="side-link active" href="#home"><span class="side-icon">⌂</span> Overview</a>
+        <a class="side-link" href="#assessment"><span class="side-icon blue-icon">▣</span> Loan assessment</a>
+        <a class="side-link" href="#eligibility-insights"><span class="side-icon purple-icon">▤</span> Eligibility Insights</a>
+      </nav>
+
+      <div class="sidebar-label sidebar-label-bottom">PROJECT</div>
+      <nav class="sidebar-nav">
+        <a class="side-link" href="#how-it-works"><span class="side-icon">ⓘ</span> How it works</a>
+        <a class="side-link" href="#about"><span class="side-icon">◌</span> About this project</a>
+      </nav>
+
+      <div class="sidebar-bottom-card">
+        <div class="sidebar-card-art"><i></i><b></b></div>
+        <strong>Smarter loan insights</strong>
+        <p>Explore predictions with a little more clarity.</p>
+        <a href="#how-it-works">Learn more <span>→</span></a>
+      </div>
+      <div class="sidebar-footer"><span class="online-dot"></span> Loan decision support</div>
+    </aside>
+
+    <div class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu-button" id="mobile-menu-button" type="button" aria-label="Open navigation">☰</button>
+        <div class="breadcrumb"><span>Workspace</span><b>/</b><strong id="current-page-label">Overview</strong></div>
+        <div class="topbar-actions">
+          
+          <button class="help-button" id="help-button" type="button" aria-label="Help">?</button>
+          <div class="avatar" aria-label="Loan assessment">L</div>
+        </div>
+      </header>
+
+      <main class="page-content">
+        <section class="welcome-section" id="home">
+          <div class="welcome-copy">
+            <div class="eyebrow"><span class="eyebrow-line"></span> LOAN DECISION SUPPORT</div>
+            <h1>Make better sense of<br><span>every loan decision.</span></h1>
+            <p>Explore approval predictions, assess repayment risk and understand what influences a model's decision — all in one place.</p>
+            <div class="welcome-actions">
+              <a class="button button-primary" href="#assessment">Start an assessment <span>→</span></a>
+              <a class="button button-light" href="#how-it-works">Explore project</a>
+            </div>
+            <div class="welcome-meta"><span class="meta-check">✓</span> Data-driven insights <span class="meta-divider">·</span> Clear decision insights</div>
+          </div>
+          <div class="welcome-art">
+            <div class="art-blob blob-blue"></div>
+            <div class="art-blob blob-green"></div>
+            <div class="art-blob blob-purple"></div>
+            <div class="hero-analytics-card">
+              <div class="hero-card-top"><span>APPLICATION OVERVIEW</span><span class="tiny-dots">•••</span></div>
+              <div class="hero-card-title">Your loan snapshot</div>
+              <div class="hero-amount-row"><strong>₹ 5,00,000</strong><span class="sample-pill">Sample</span></div>
+              <div class="hero-card-sub">Illustrative application amount</div>
+              <div class="hero-mini-chart">
+                <div class="mini-chart-labels"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
+                <div class="mini-bars"><i style="height:35%"></i><i style="height:52%"></i><i style="height:43%"></i><i style="height:72%"></i><i style="height:58%"></i><i style="height:88%"></i><i style="height:68%"></i></div>
+              </div>
+              <div class="hero-card-bottom"><span><i class="legend-dot dot-blue"></i> Loan insights</span><b>Demo visual</b></div>
+            </div>
+            <div class="floating-stat floating-stat-top"><span class="float-icon green-float">✓</span><div><b>Risk assessment</b><small>Second-stage analysis</small></div></div>
+            <div class="floating-stat floating-stat-bottom"><span class="float-icon purple-float">✧</span><div><b>Model insights</b><small>Understand key factors</small></div></div>
+            <div class="art-spark spark-one"></div><div class="art-spark spark-two">✧</div>
+          </div>
+        </section>
+
+        <section class="stats-grid" aria-label="Project overview">
+          <article class="stat-card stat-blue">
+            <div class="stat-card-top"><span>DECISION STAGES</span><span class="stat-icon">▣</span></div>
+            <div class="stat-number">02</div>
+            <div class="stat-caption">Approval + repayment risk</div>
+            <div class="stat-bottom"><span class="stat-line blue-line"></span><small>Two-stage workflow</small></div>
+          </article>
+          <article class="stat-card stat-green">
+            <div class="stat-card-top"><span>DATASET TARGET</span><span class="stat-icon">◉</span></div>
+            <div class="stat-number stat-word">Default</div>
+            <div class="stat-caption">Repayment outcome label</div>
+            <div class="stat-bottom"><span class="stat-line green-line"></span><small>Available in current data</small></div>
+          </article>
+          <article class="stat-card stat-purple">
+            <div class="stat-card-top"><span>MODEL TRANSPARENCY</span><span class="stat-icon">✧</span></div>
+            <div class="stat-number stat-word">Explain</div>
+            <div class="stat-caption">Feature influence and reasons</div>
+            <div class="stat-bottom"><span class="stat-line purple-line"></span><small>Third project feature</small></div>
+          </article>
+          <article class="stat-card stat-orange">
+            <div class="stat-card-top"><span>PROJECT STATUS</span><span class="stat-icon">◷</span></div>
+            <div class="stat-number stat-word">Building</div>
+            <div class="stat-caption">Academic prototype</div>
+            <div class="stat-bottom"><span class="stat-line orange-line"></span><small>Model integration pending</small></div>
+          </article>
+        </section>
+
+        <section class="section-block" id="features">
+          <div class="section-heading">
+            <div><div class="eyebrow">LOAN ASSESSMENT FEATURES</div><h2>Explore the features</h2><p>Three connected parts of a loan decision support workflow.</p></div>
+            <span class="heading-side-note">01 — 03 / FEATURES</span>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card feature-approval">
+              <div class="feature-card-top"><span class="feature-number">01</span><span class="feature-chip chip-blue">APPROVAL</span></div>
+              <div class="feature-art approval-art">
+                <div class="approval-paper"><div class="paper-heading"><i></i><i></i><i></i></div><b>Loan application</b><span class="paper-line long"></span><span class="paper-line"></span><span class="paper-line medium"></span><div class="paper-button"></div></div>
+                <div class="approval-check">✓</div><div class="approval-circle"></div>
+              </div>
+              <h3>Loan eligibility assessment</h3>
+              <p>Submit applicant and loan details once to receive an eligibility decision and, when approved, a repayment risk estimate.</p>
+              <a href="#assessment" class="feature-action blue-action">Start an assessment <span>↗</span></a>
+            </article>
+            <article class="feature-card feature-risk">
+              <div class="feature-card-top"><span class="feature-number">02</span><span class="feature-chip chip-green">REPAYMENT</span></div>
+              <div class="feature-art risk-art">
+                <div class="risk-gauge"><div class="gauge-inner"><strong>?</strong><small>Risk</small></div></div>
+                <div class="risk-pill pill-one">Credit score</div><div class="risk-pill pill-two">DTI ratio</div><div class="risk-dot"></div>
+              </div>
+              <h3>Repayment risk assessment</h3>
+              <p>Review repayment risk after the eligibility stage approves the application.</p>
+              <a href="#assessment" class="feature-action green-action">View assessment <span>↗</span></a>
+            </article>
+            <article class="feature-card feature-explain">
+              <div class="feature-card-top"><span class="feature-number">03</span><span class="feature-chip chip-purple">TRANSPARENCY</span></div>
+              <div class="feature-art explain-art">
+                <div class="explain-panel"><b>Important factors</b><div class="explain-row"><span></span><i class="factor-a"></i></div><div class="explain-row"><span></span><i class="factor-b"></i></div><div class="explain-row"><span></span><i class="factor-c"></i></div><div class="explain-row"><span></span><i class="factor-d"></i></div></div>
+                <div class="explain-spark">✧</div>
+              </div>
+              <h3>Eligibility Insights</h3>
+              <p>Understand the main factors that influenced the eligibility and repayment risk results.</p>
+              <a href="#eligibility-insights" class="feature-action purple-action">Explore explanations <span>↗</span></a>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-block tool-section" id="assessment">
+          <div class="section-heading">
+            <div><div class="eyebrow blue-eyebrow">LOAN ASSESSMENT</div><h2>Loan eligibility and repayment risk</h2><p>Enter the applicant and loan details once to receive an eligibility decision and, when eligible, a repayment risk assessment.</p></div>
+            <span class="status-pill status-planned"><i></i> Two-stage assessment</span>
+          </div>
+          <div class="tool-layout">
+            <form class="form-card" id="assessment-form">
+              <div class="form-card-heading"><div class="form-heading-icon blue-heading-icon">▣</div><div><h3>Applicant and loan details</h3><p>Complete the information below for both assessment stages.</p></div><span class="step-label">ONE FORM</span></div>
+              <div class="form-section">
+                <h4><span class="form-section-icon">01</span> Personal and employment details</h4>
+                <div class="form-grid">
+                  <label class="field"><span>Age</span><input id="assessment-age" name="Age" type="number" min="18" max="100" placeholder="e.g. 28" required></label>
+                  <label class="field"><span>Education</span><select id="assessment-education" name="Education" required><option value="">Select education</option><option>High School</option><option>Bachelor's</option><option>Master's</option><option>PhD</option></select></label>
+                  <label class="field"><span>Employment type</span><select id="assessment-employment-type" name="EmploymentType" required><option value="">Select employment</option><option>Full-time</option><option>Part-time</option><option>Self-employed</option><option>Unemployed</option></select></label>
+                  <label class="field"><span>Months employed</span><input id="assessment-months-employed" name="MonthsEmployed" type="number" min="0" placeholder="e.g. 36" required></label>
+                  <label class="field"><span>Number of dependents</span><input id="assessment-dependents" name="NoOfDependents" type="number" min="0" max="10" placeholder="e.g. 2" required></label>
+                  <label class="field"><span>Marital status</span><select id="assessment-marital-status" name="MaritalStatus" required><option value="">Select status</option><option>Single</option><option>Married</option><option>Divorced</option></select></label>
+                </div>
+              </div>
+              <div class="form-section">
+                <h4><span class="form-section-icon">02</span> Financial and credit details</h4>
+                <div class="form-grid">
+                  <label class="field"><span>Annual income (₹)</span><input id="assessment-income" name="Income" type="number" min="0" placeholder="e.g. 600000" required></label>
+                  <label class="field"><span>Loan amount (₹)</span><input id="assessment-loan-amount" name="LoanAmount" type="number" min="0" placeholder="e.g. 300000" required></label>
+                  <label class="field"><span>Credit score (CIBIL)</span><input id="assessment-credit-score" name="CreditScore" type="number" min="300" max="900" placeholder="e.g. 720" required></label>
+                  <label class="field"><span>Debt-to-income ratio</span><input id="assessment-dti" name="DTIRatio" type="number" min="0" max="1" step="0.01" placeholder="e.g. 0.32" required></label>
+                  <label class="field"><span>Number of credit lines</span><input id="assessment-credit-lines" name="NumCreditLines" type="number" min="0" placeholder="e.g. 3" required></label>
+                  <label class="field"><span>Interest rate (%)</span><input id="assessment-interest-rate" name="InterestRate" type="number" min="0" step="0.01" placeholder="e.g. 10.5" required></label>
+                  <label class="field"><span>Loan term (months)</span><input id="assessment-loan-term" name="LoanTerm" type="number" min="1" placeholder="e.g. 36" required></label>
+                </div>
+              </div>
+              <div class="form-section">
+                <h4><span class="form-section-icon">03</span> Additional loan information</h4>
+                <div class="form-grid">
+                  <label class="field"><span>Loan purpose</span><select id="assessment-loan-purpose" name="LoanPurpose" required><option value="">Select purpose</option><option>Home</option><option>Auto</option><option>Education</option><option>Business</option><option>Other</option></select></label>
+                  <label class="field"><span>Has mortgage?</span><select id="assessment-mortgage" name="HasMortgage" required><option value="">Select option</option><option>Yes</option><option>No</option></select></label>
+                  <label class="field"><span>Has co-signer?</span><select id="assessment-cosigner" name="HasCoSigner" required><option value="">Select option</option><option>Yes</option><option>No</option></select></label>
+                </div>
+              </div>
+              <div class="form-section">
+                <h4><span class="form-section-icon">04</span> Assets</h4>
+                <div class="form-grid">
+                  <label class="field"><span>Residential assets (₹)</span><input id="assessment-residential-assets" name="ResidentialAssets" type="number" min="0" placeholder="e.g. 2000000" required></label>
+                  <label class="field"><span>Commercial assets (₹)</span><input id="assessment-commercial-assets" name="CommercialAssets" type="number" min="0" placeholder="e.g. 0" required></label>
+                  <label class="field"><span>Luxury assets (₹)</span><input id="assessment-luxury-assets" name="LuxuryAssets" type="number" min="0" placeholder="e.g. 500000" required></label>
+                  <label class="field"><span>Bank assets (₹)</span><input id="assessment-bank-assets" name="BankAssets" type="number" min="0" placeholder="e.g. 800000" required></label>
+                </div>
+              </div>
+              <div class="form-submit-row"><p><span>i</span> Your details are used first for the eligibility decision. Repayment risk is assessed only if the application is approved.</p><button class="button button-primary" id="assessment-submit-button" type="submit">Assess loan <span>→</span></button></div>
+            </form>
+
+            <aside class="result-column">
+              <div class="result-card approval-result-card" id="approval-result-card" aria-live="polite">
+                <div class="result-card-top"><span>ELIGIBILITY RESULT</span></div>
+                <div class="empty-result-icon blue-empty">▣</div>
+                <h3>Eligibility decision pending</h3>
+                <p>Submit the form to see the loan eligibility result.</p>
+                <div class="result-placeholder-lines"><i></i><i></i><i></i></div>
+                <div class="result-card-foot"><span class="result-dot blue-result-dot"></span> Awaiting assessment</div>
+              </div>
+              <div class="result-card risk-result-card" id="risk-result-card" aria-live="polite">
+                <div class="result-card-top"><span>REPAYMENT RISK RESULT</span></div>
+                <div class="risk-meter-placeholder"><div class="meter-ring"><div><b>--</b><small>Risk score</small></div></div></div>
+                <h3>Risk assessment unavailable</h3>
+                <p>Repayment risk will be assessed only after the loan eligibility result is approved.</p>
+                <div class="risk-scale"><span>Lower risk</span><span>Higher risk</span></div>
+                <div class="risk-scale-track"><i></i></div>
+                <div class="result-card-foot"><span class="result-dot green-result-dot"></span> Awaiting eligibility decision</div>
+              </div>
+              <div class="info-card blue-info-card"><span class="info-icon">i</span><div><b>How the assessment works</b><p>The eligibility decision comes first. If approved, the same submitted details are used for repayment risk. If rejected, no repayment risk score is produced.</p></div></div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section-block explain-section" id="eligibility-insights">
+          <div class="section-heading">
+            <div><div class="eyebrow purple-eyebrow">FEATURE 03 / TRANSPARENCY</div><h2>Eligibility Insights</h2><p>Turn model output into information people can understand.</p></div>
+            <span class="status-pill status-planned"><i></i> Decision insights</span>
+          </div>
+          <div class="explain-layout">
+            <div class="explain-copy-card">
+              <div class="explain-large-icon">✧</div>
+              <h3>Not just a result.<br><span>A reason behind it.</span></h3>
+              <p>The assessment highlights which applicant attributes influenced the model's output, instead of displaying only an approval or default prediction.</p>
+              <div class="explain-methods"><span>Feature importance</span><span>Individual explanation</span></div>
+              <a class="button button-purple" href="#how-it-works">How explanations work <span>→</span></a>
+              <div class="purple-decoration"></div>
+            </div>
+            <div class="explain-chart-card">
+              <div class="chart-card-heading"><div><b>Feature influence</b><small>Example layout — illustrative values</small></div><span class="chart-menu">•••</span></div>
+              <div class="chart-legend"><span><i class="legend-purple"></i> Relative importance</span><span>Example only</span></div>
+              <div class="horizontal-chart" id="feature-importance-chart">
+                <div class="chart-row"><label>Credit score</label><div class="chart-track"><i style="width:86%"></i></div><b>86%</b></div>
+                <div class="chart-row"><label>DTI ratio</label><div class="chart-track"><i style="width:72%"></i></div><b>72%</b></div>
+                <div class="chart-row"><label>Income</label><div class="chart-track"><i style="width:61%"></i></div><b>61%</b></div>
+                <div class="chart-row"><label>Interest rate</label><div class="chart-track"><i style="width:48%"></i></div><b>48%</b></div>
+                <div class="chart-row"><label>Loan amount</label><div class="chart-track"><i style="width:37%"></i></div><b>37%</b></div>
+                <div class="chart-row"><label>Months employed</label><div class="chart-track"><i style="width:26%"></i></div><b>26%</b></div>
+              </div>
+              <div class="chart-warning"><span>ⓘ</span> Illustrative example. Displayed explanations should reflect the assessment results.</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-block workflow-section" id="how-it-works">
+          <div class="section-heading"><div><div class="eyebrow">THE PROJECT WORKFLOW</div><h2>One submission. Two connected stages.</h2><p>Eligibility is checked first. Repayment risk is assessed only when the application is approved.</p></div></div>
+          <div class="workflow-track">
+            <article class="workflow-step workflow-blue"><span class="workflow-step-number">01</span><div class="workflow-step-icon">▣</div><span class="workflow-label">STAGE ONE</span><h3>Approval prediction</h3><p>Reviews applicant and loan details to estimate whether the application meets the eligibility criteria.</p><span class="workflow-foot">Eligibility decision</span></article>
+            <div class="workflow-connector"><span>→</span></div>
+            <article class="workflow-step workflow-green"><span class="workflow-step-number">02</span><div class="workflow-step-icon">◉</div><span class="workflow-label">STAGE TWO</span><h3>Repayment risk</h3><p>If eligibility is approved, the same details are used to estimate the likelihood of repayment difficulty.</p><span class="workflow-foot">Only after approval</span></article>
+            <div class="workflow-connector"><span>→</span></div>
+            <article class="workflow-step workflow-purple"><span class="workflow-step-number">03</span><div class="workflow-step-icon">✧</div><span class="workflow-label">EXPLANATION</span><h3>Understand the output</h3><p>Explains which features influence a model's prediction and supports transparent review.</p><span class="workflow-foot">Explains the assessment results</span></article>
+          </div>
+        </section>
+
+        <section class="bottom-note" id="about">
+          <div class="bottom-note-icon">i</div><div><b>About this project</b><p>This project provides decision-support estimates for learning and demonstration. It is not a bank, does not issue loans and should not be used as the sole basis for real lending decisions.</p></div>
+          
+        </section>
+      </main>
+
+      <footer class="page-footer"><a class="footer-brand" href="#home">Loan Insights</a><span>Loan Eligibility &amp; Repayment Risk Decision Support</span><span>Academic project prototype · 2026</span></footer>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
