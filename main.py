@@ -971,15 +971,4 @@ def feature_importance():
         )
 
 
-# ============================================================
-# SERVE FRONTEND
-# ============================================================
-
-app.mount(
-    "/",
-    StaticFiles(
-        directory=BASE_DIR,
-        html=True
-    ),
-    name="frontend"
 )
